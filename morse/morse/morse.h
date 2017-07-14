@@ -2,8 +2,6 @@
 Autor: Bartosz Stasiak
 Program: Morse
 Data utworzenia: 07.11.2016
-//- funkcja CAB mnie nie przekonuje. Moze lepiej jesli w klasie a prywatna?
-//- a jeszcze lepiej jesli to dodatkowa klasa by byla
 */
 #pragma once
 #ifndef _MORSE_H_
@@ -35,11 +33,11 @@ Data utworzenia: 07.11.2016
 			void setCharPause(int);			//metoda ustaw czas przerwy miêdzy znakami
 
 			//get
-		int getFrequency() const;				//metoda pobieraj¹ca czestotliwosc dzwieku
-		int getPause() const;					//metoda pobieraj¹ca czas pauzy odpowiadaj¹cej spacji
-		int getDotTime() const;					//metoda pobieraj¹ca czas trwania kropki
-		int getDashTime() const;				//metoda pobieraj¹ca czas trwania kreski
-		int getCharPause() const;				//metoda pobieraj¹ca czas przerwy miêdzy znakami
+			int getFrequency() const;				//metoda pobieraj¹ca czestotliwosc dzwieku
+			int getPause() const;					//metoda pobieraj¹ca czas pauzy odpowiadaj¹cej spacji
+			int getDotTime() const;					//metoda pobieraj¹ca czas trwania kropki
+			int getDashTime() const;				//metoda pobieraj¹ca czas trwania kreski
+			int getCharPause() const;				//metoda pobieraj¹ca czas przerwy miêdzy znakami
 
 			//operatory
 			morse& morse::operator<<(const char *);			//przeci¹¿ony operator dla tekstu
