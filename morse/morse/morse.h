@@ -20,7 +20,7 @@ Data utworzenia: 07.11.2016
 		public:
 			//konstruktory
 			morse();						//pusty konstruktor
-			morse(const morse &);			//konstruktor kopiuj¹cy
+			morse(const morse &);			//konstruktor kopiujÄ…cy
 
 			//destruktory
 			~morse();
@@ -30,26 +30,26 @@ Data utworzenia: 07.11.2016
 			void setPause(int);				//metoda ustaw czas pauzy odpowiadajacej spacji
 			void setDotTime(int);			//metoda ustaw czas trwania kropki
 			void setDashTime(int);			//metoda ustaw czas trwania kreski
-			void setCharPause(int);			//metoda ustaw czas przerwy miêdzy znakami
+			void setCharPause(int);			//metoda ustaw czas przerwy miÄ™dzy znakami
 
 			//get
-			int getFrequency() const;				//metoda pobieraj¹ca czestotliwosc dzwieku
-			int getPause() const;					//metoda pobieraj¹ca czas pauzy odpowiadaj¹cej spacji
-			int getDotTime() const;					//metoda pobieraj¹ca czas trwania kropki
-			int getDashTime() const;				//metoda pobieraj¹ca czas trwania kreski
-			int getCharPause() const;				//metoda pobieraj¹ca czas przerwy miêdzy znakami
+			int getFrequency() const;				//metoda pobierajÄ…ca czestotliwosc dzwieku
+			int getPause() const;					//metoda pobierajÄ…ca czas pauzy odpowiadajÄ…cej spacji
+			int getDotTime() const;					//metoda pobierajÄ…ca czas trwania kropki
+			int getDashTime() const;				//metoda pobierajÄ…ca czas trwania kreski
+			int getCharPause() const;				//metoda pobierajÄ…ca czas przerwy miÄ™dzy znakami
 
 			//operatory
-			morse& morse::operator<<(const char *);			//przeci¹¿ony operator dla tekstu
-			morse& morse::operator<<(const long &);			//przeci¹¿ony operator dla liczby long
-			morse& morse::operator<<(const double &);		//przeci¹¿ony operator dla liczby double
-			morse& morse::operator<<(morse &(*)(morse &));	//przeci¹¿ony operator dla pause
-			morse& morse::operator=(const morse &);			//przeci¹¿ony operator =
+			morse& morse::operator<<(const char *);			//przeciÄ…Å¼ony operator dla tekstu
+			morse& morse::operator<<(const long &);			//przeciÄ…Å¼ony operator dla liczby long
+			morse& morse::operator<<(const double &);		//przeciÄ…Å¼ony operator dla liczby double
+			morse& morse::operator<<(morse &(*)(morse &));	//przeciÄ…Å¼ony operator dla pause
+			morse& morse::operator=(const morse &);			//przeciÄ…Å¼ony operator =
 	};
 	//manipulator
 	morse& pause(morse &);
 
 	//funkcja
-	void CAB(std::string, morse &);	//funkcja (convert and beep) konwertuj¹ca litery i liczby na morsa i beepuj¹ca je
+	void CAB(std::string, morse &);	//funkcja (convert and beep) konwertujÄ…ca litery i liczby na morsa i beepujÄ…ca je
 
 #endif
